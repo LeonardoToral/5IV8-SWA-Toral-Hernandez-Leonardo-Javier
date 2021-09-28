@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="js/cesar.js"></script>
+    <script src="js/viggenere.js"></script>
+    <link rel="stylesheet" href="./css/disenio.css">
+    <title>Cifrado</title>
+</head>
+<body>
+    <div class="superior">
+        <h1>Ciframiento de cesar y vigenere</h1>
+    </div>
+    <div class="contenedor">
+        <h2>Cifrado de cesar</h2>
+        <br>
+        <table>
+            <tr>
+                <td class="td_sup">Introduce una cadena</td>
+                <td class="td_inf"><textarea id="cadena"></textarea></td>
+            </tr>
+            <tr>
+                <td class="td_sup">Introduce el desplazamiento del cifrado</td>
+                <td class="td_inf"><textarea id="desp"></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Cifrar" onclick="cifrar()"></td>
+                <td><input type="button" value="Descifrar" onclick="descifrar()"></td>
+            </tr>
+            <tr>
+                <td class="td_sup">Resultado</td>
+                <td><textarea id="resultado"></textarea></td>
+            </tr>
+        </table>
+    </div>
+    <div class="contenedor">
+        <h2>Cifrado de vigenere</h2>
+        <br>
+        <table>
+            <tr>
+                <td class="td_sup">Introduce una cadena</td>
+                <td class="td_inf"><textarea id="mess"></textarea></td>
+            </tr>
+            <tr>
+                <td class="td_sup">Introduce la llave para el cifrado</td>
+                <td class="td_inf"><textarea id="llave"></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Cifrar" id="ci"></td>
+                <td><input type="button" value="Descifrar" id="de"></td>
+            </tr>
+            <tr>
+                <td class="td_sup">Resultado</td>
+                <td><textarea id="rs"></textarea></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
