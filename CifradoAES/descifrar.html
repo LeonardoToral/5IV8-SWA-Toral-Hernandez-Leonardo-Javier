@@ -79,6 +79,16 @@
                 saveAs(blob, "Mensaje_Descifrado.doc");
             }
         });
+        $('#descargar_pdf').click(function(){
+            var cifrado = document.getElementById('mensaje-descifrado').value;
+            if(cifrado==""){
+                alert("Se debe de cifrar un texto");
+            }
+            else{
+                var blob = new Blob([cifrado], {type: "text/plain;charset=utf-8"});
+                saveAs(blob, "Mensaje_Descifrado.pdf");
+            }
+        });
     </script>
     <script>
         function abrirArchivos(evento){
