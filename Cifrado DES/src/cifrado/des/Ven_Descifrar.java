@@ -139,8 +139,8 @@ public class Ven_Descifrar extends javax.swing.JFrame {
         clave = Key.getText().toString();
         archivo = Path.getText().toString();
         longitud = clave.length();
-        if(longitud > 8){
-            JOptionPane.showMessageDialog(null, "La clave debe de ser máximo de 8 caracteres");
+        if(longitud != 8){
+            JOptionPane.showMessageDialog(null, "La clave debe de ser de 8 caracteres");
         }
         else{
             try {
